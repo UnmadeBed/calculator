@@ -23,8 +23,18 @@ const operate = (operator, num1, num2) => operator(num1, num2);
 // Display button input
 
 const display = document.querySelector('.display');
-const buttonWrapper = document.querySelector('.wrapper');
+const buttons = document.querySelectorAll('.number-key');
 
-let displayValue = buttonWrapper.addEventListener('click', (e) => {
-	display.textContent += e.target.textContent;
+buttons.forEach((button) => {
+	button.addEventListener('click', (e) => {
+		console.log(e.target.textContent);
+		display.textContent += e.target.textContent;
+	});
 });
+
+// perform calculation
+// Would I use the reduce method here?
+
+// const calculation = () => {
+// 	let num1 = displayValue;
+// };
