@@ -19,17 +19,17 @@
     color: white;
 }
 
-.clear {
-    background-color: darkgray;
-    grid-column: 1/4;
-}
-
 .number-key {
     background-color: lightgrey;
 }
 
-.operator {
+.operator, .equals {
     background-color: orange;
+}
+
+.clear {
+    background-color: darkgray;
+    grid-column: 1/4;
 }
 
 .zero {
